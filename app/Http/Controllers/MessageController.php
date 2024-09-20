@@ -35,7 +35,6 @@ class MessageController extends Controller
     // Method to show all messages
     public function showMessages()
     {
-        $messages = Message::all();
-        return response()->json(['status' => 'success', 'messages' => $messages]);
+        return response()->json(['status' => 'success']);
     }
 }
